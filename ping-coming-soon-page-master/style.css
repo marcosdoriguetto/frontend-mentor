@@ -78,6 +78,7 @@ header {
     margin: 1em 0;
     box-shadow: 0 0.5em 1em rgba(79, 125, 243, .4);
     transition: 0.2s ease-in;
+    cursor: pointer;
 }
 
 .article--button:hover {
@@ -94,23 +95,6 @@ header {
     text-align: justify;
     padding: 0em 3em;
 }
-
-.article--email--response--ok {
-    color: green;
-}
-
-.article--email--response--wrong {
-    color: var(--error);
-}
-
-.article--input--ok {
-    border-color: green;
-}
-
-.article--input--wrong {
-    border-color: var(--error);
-}
-
 
 .footer {
     margin-top: 1em;

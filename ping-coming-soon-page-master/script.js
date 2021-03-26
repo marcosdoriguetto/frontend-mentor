@@ -3,31 +3,19 @@ const button = document.querySelector('.article--button');
 
 const validateEmail = email => {
     if (/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-        return "Email enviado com sucesso!"
+        return "Email inserido está correto!"
     } else {
         return "Email inválido, por favor verifique o campo acima!";
     }
 }
 
 const classResponse = div => {
-    if (div.textContent == "Email enviado com sucesso!") {
-        if (document.querySelector('.article--email--response--wrong')) {
-            div.classList.remove("article--email--response--wrong");
-        }
-        if (document.querySelector('.article--input--wrong')) {
-            inputEmail.classList.remove("article--input--wrong");
-        }
-        inputEmail.classList.add("article--input--ok")
-        div.classList.add("article--email--response--ok")
+    if (div.textContent == "Email inserido está correto!") {
+        inputEmail.style.borderColor = "green";
+        div.style.color = "green";
     } else {
-        if (document.querySelector('.article--email--response--ok')) {
-            div.classList.remove("article--email--response--ok");
-        }
-        if (document.querySelector('.article--input--ok')) {
-            inputEmail.classList.remove("article--input--ok");
-        }
-        inputEmail.classList.add("article--input--wrong");
-        div.classList.add("article--email--response--wrong")
+        inputEmail.style.borderColor = "red";
+        div.style.color = "red";
     }
 }
 
