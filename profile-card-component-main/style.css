@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root {
+    --primary: hsl(185, 75%, 39%);
+    --secondary: hsl(229, 23%, 23%);
+    --tertiary: hsl(227, 10%, 46%);
+    --neutral: hsl(0, 0%, 59%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 18px;
+    min-height: 100vh;
+    text-align: center;
+    color: var(--secondary);
+    font-family: 'Kumbh Sans', sans-serif;
+    background-image: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
+    background-position: left -40em top -35em, right -43em bottom -30em;
+    background-repeat: no-repeat, no-repeat;
+    background-color: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1, h2, h3 {
+    font-weight: 400;
+}
+
+.contents {
+    background-image: url(./images/bg-pattern-card.svg);
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
+.contents--header {
+    padding-top: 1.5em;
+}
+
+.contents--image, .contents--information, .contents--social {
+    background-color: white;
+}
+
+.contents--image, .contents--social--title {
+    padding: 0.5em;
+}
+
+.contents--image {
+    border-radius: 50%;
+    transform: translateY(3em);
+}
+
+.contents--information {
+    padding-top: 4em;
+}
+
+.contents--information--title {
+    font-size: 1.2em;
+    color: var(--neutral);
+}
+
+.contents--information--title strong {
+    color: var(--secondary);
+}
+
+.contents--city {
+    color: var(--neutral);
+    font-size: 0.6em;
+    padding: 1.5em 0 2em 0;
+}
+
+.contents--social {
+    font-size: 0.8em;
+    padding: 1.5em;
+    border-top: 1px solid var(--neutral);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-radius: 0 0 20px 20px;
+}
+
+.contents--social--subtitle {
+    font-size: 0.8em;
+    letter-spacing: 0.1em;
+    color: var(--neutral);
+}
+
+/* Anchors */
+
+/* Telefones em landscape e abaixo */
+@media (max-width: 480px) {
+    .contents {
+        width: 90%;
+    }
+}
+
+/* Telefone em landscape a tablet em portrait */
+@media (min-width: 520px) and (max-width: 665px) {
+    body {
+        background-position: left -37em top -32em, right -40em bottom -27em;
+    }
+
+    .contents {
+        width: 70%;
+    }
+}
+
+@media (min-width: 666px) and (max-width: 920px) {
+    body {
+        background-position: left -34em top -29em, right -37em bottom -24em;
+    }
+
+    .contents {
+        width: 55%;
+    }
+}
+
+@media (min-width: 921px) and (max-width: 1089px) {
+    body {
+        background-position: left -34em top -29em, right -37em bottom -24em;
+    }
+
+    .contents {
+        width: 45%;
+    }
+}
+
+/* tablet em portrait a landscape e desktop */
+@media (min-width: 1090px) and (max-width: 1199px) {
+    body {
+        background-position: left -31em top -26em, right -34em bottom -21em;
+    }
+
+
+    .contents {
+        width: 40%;
+    }
+}
+
+/* Desktop grande */
+@media (min-width: 1200px) {
+    body {
+        background-position: left -31em top -26em, right -34em bottom -21em;
+    }
+
+    .contents {
+        width: 40%;
+    }
+}
+
+
+@media (min-width: 1440px) {
+    body {
+        background-position: left -28em top -23em, right -31em bottom -18em;
+    }
+
+    .contents {
+        width: 30%;
+    }
+}
