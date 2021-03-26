@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Screenshot
 
-![](./images/my-version-desktop.png)
-![](./images/my-version-mobile.png)
+![Desktop](./images/my-version-desktop.png)
+![Mobile](./images/my-version-mobile.png)
 
 ## Processo
 
@@ -45,7 +45,7 @@ Users should be able to:
 
 ### What I learned
 
-- [Example resource 1](http://getbem.com/introduction/) - Metodologia BEM(Block Element Modifier)
+- [BEM](http://getbem.com/introduction/) - methodology BEM(Block Element Modifier)
 
 ## Author
 
