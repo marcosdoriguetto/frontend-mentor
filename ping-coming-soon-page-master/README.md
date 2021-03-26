@@ -32,7 +32,7 @@ Users should be able to:
 ![Desktop](./images/my-version-desktop.png)
 ![Mobile](./images/my-version-mobile.png)
 
-## Processo
+## My process
 
 ### Built with
 
