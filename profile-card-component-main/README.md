@@ -42,6 +42,7 @@ You can use any tools you like to help you complete the challenge. So if you've 
 ### What I learned
 
 - [BEM](http://getbem.com/introduction/) - methodology BEM(Block Element Modifier)
+- [Overflow](https://developer.mozilla.org/en-US/docs/Web/CSS/overflow) - property overflow css
 
 ## Author
 
