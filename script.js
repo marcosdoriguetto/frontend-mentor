@@ -13,8 +13,8 @@ doneProjects.forEach(name => {
     const createLi = document.createElement('li');
 
     createLi.innerHTML = `
-        <a href="/${name}/index.html">
-            <img src="/${name}/design/desktop-design.jpg" alt="${name}" />
+        <a href="./${name}/index.html">
+            <img src="./${name}/design/desktop-design.jpg" alt="${name}" />
             <p>${formatText(name)}</p>
         </a>
     `;
