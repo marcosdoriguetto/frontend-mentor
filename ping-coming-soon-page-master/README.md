@@ -42,7 +42,7 @@ Users should be able to:
 - Responsive
 - Mobile-first workflow
 - BEM methodology
-
+- JS ES6 - Const, let, arrow functions, DOM manipulation
 
 ### What I learned
 
