@@ -27,6 +27,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .faq {
@@ -34,7 +35,6 @@ body {
     margin: 0 auto;
     background-color: white;
     border-radius: 20px;
-    padding: 4em 2em;
     box-shadow: 0 2em 2em var(--backgroundBlue);
 }
 
@@ -47,8 +47,13 @@ body {
     z-index: 0;
 }
 
-.faq--images--box {
+.box {
     display: none;
+}
+
+.faq--images {
+    position: relative;
+    overflow: visible;
 }
 
 .faq--images--desktop {
@@ -57,12 +62,12 @@ body {
 
 .faq--images--mobile--woman, .faq--images--mobile--pattern {
     position: absolute;
-    transform: translate(-50%, -80%);
+    transform: translate(-50%, -58%);
     left: 47%;
 }
 
 .faq--images--mobile--pattern {
-    transform: translate(-45%, -60%);
+    transform: translate(-45%, -19%);
     left: 47%;
 }
 
@@ -95,6 +100,7 @@ body {
 
 .faq--questions {
     position: relative;
+    padding: 4em 2em;
     margin-top: 7em;
 }
 
@@ -137,11 +143,15 @@ body {
 }  
 
 @media (min-width: 1200px) {
-    .faq--images--box {
+    .box {
         display: block;
         position: absolute;
-        transform: translate(-60%, 40%);
+        transform: translate(-50%, 90%);
         z-index: 3;
+    }
+
+    .faq--images {
+        overflow: hidden;
     }
 
     .faq--images--desktop {
@@ -151,14 +161,14 @@ body {
     .faq--images--desktop--woman {
         width: 400px;
         position: absolute;
-        transform: translate(-23%, 0);
+        transform: translate(-16%, 20%);
         z-index: 2;
     }
 
     .faq--images--desktop--pattern {
-        width: 500px;
+        width: 800px;
         position: absolute;
-        transform: translate(-38%, -15%);
+        transform: translate(-58%, -29%);
         z-index: 1;
     }
 
@@ -179,18 +189,17 @@ body {
 
 /* Desktop grande */
 @media (min-width: 1375px) {
-    .faq--images--box {
-        transform: translate(-60%, 55%);
+    .box {
+        transform: translate(-50%, 80%);
     }
 
     .faq--images--desktop--woman {
         width: 470px;
-        transform: translate(-20%, -10%);
+        transform: translate(-17%, 5%);
     }
 
     .faq--images--desktop--pattern {
-        width: 800px;
-        transform: translate(-53%, -35%);
+        transform: translate(-53%, -29%);
     }
 
     .faq {
