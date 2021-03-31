@@ -3,14 +3,14 @@ const button = document.querySelector('.article--button');
 
 const validateEmail = email => {
     if (/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-        return "Email inserido está correto!"
+        return "Email inserido está correto!";
     } else {
         return "Email inválido, por favor verifique o campo acima!";
     }
 }
 
 const classResponse = div => {
-    if (div.textContent == "Email inserido está correto!") {
+    if (div.textContent === "Email inserido está correto!") {
         inputEmail.style.borderColor = "green";
         div.style.color = "green";
     } else {
