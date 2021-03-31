@@ -46,6 +46,7 @@ Users should be able to:
 ### What I learned
 
 - [BEM](http://getbem.com/introduction/) - methodology BEM(Block Element Modifier)
+- [Overflow](https://developer.mozilla.org/en-US/docs/Web/CSS/overflow) - property overflow css
 
 ## Author
 
