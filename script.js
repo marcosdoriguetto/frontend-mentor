@@ -1,4 +1,4 @@
-const doneProjects = ['faq-accordion-card-main', 'ping-coming-soon-page-master', 'profile-card-component-main'];
+const doneProjects = ['faq-accordion-card-main', 'ping-coming-soon-page-master', 'profile-card-component-main', 'social-proof-section-master'];
 
 const listProjects = document.querySelector('ul');
 

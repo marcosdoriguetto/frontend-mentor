@@ -1,4 +1,4 @@
-# Frontend Mentor - Faq Accordion Card Main
+# Frontend Mentor - Social proof section
 
 This is a solution to the [Ping coming soon page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/ping-single-column-coming-soon-page-5cadd051fec04111f7b848da). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
@@ -20,9 +20,7 @@ This is a solution to the [Ping coming soon page challenge on Frontend Mentor](h
 
 Users should be able to:
 
-- View the optimal layout for the component depending on their device's screen size
-- See hover states for all interactive elements on the page
-- Hide/Show the answer to a question when the question is clicked
+- View the optimal layout for the section depending on their device's screen size
 
 ### Screenshot
 
@@ -40,13 +38,10 @@ Users should be able to:
 - Responsive
 - Mobile-first workflow
 - BEM methodology
-- JS ES6 - Arrow function, const, forEach, DOM manipulation
-
 
 ### What I learned
 
 - [BEM](http://getbem.com/introduction/) - methodology BEM(Block Element Modifier)
-- [Overflow](https://developer.mozilla.org/en-US/docs/Web/CSS/overflow) - property overflow css
 
 ## Author
 

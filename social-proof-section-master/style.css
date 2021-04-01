@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
+
+:root {
+    --primary: hsl(300, 43%, 22%);
+    --textPink: hsl(333, 80%, 67%);
+    --backgroundMagenta: hsl(303, 10%, 53%);
+    --textMagenta: hsl(300, 24%, 96%);
+    --textWhite: hsl(0, 0%, 100%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-size: 15px;
+    font-family: 'Spartan', sans-serif;
+    text-align: center;
+    background: url(./images/bg-pattern-top-mobile.svg) no-repeat, url(./images/bg-pattern-bottom-mobile.svg) no-repeat bottom right;
+}
+
+.products {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.products--header, .products--footer {
+    padding: 1em 0;
+}
+
+.products--texts h1, .products--rateds--content h2 {
+    color: var(--primary);
+}
+
+.products--texts h1 {
+    font-size: 2em;
+    line-height: 1em;
+    font-weight: 700;
+    padding: 1.5em 1.5em 1em;
+}
+
+.products--texts h4 {
+    color: var(--backgroundMagenta);
+    font-size: 0.9em;
+    padding: 0 1em 1em;
+}
+
+.products--rateds {
+    padding-top: 2em;
+}
+
+.products--rateds--content, .products--cards {
+    margin-bottom: 1em;
+    border-radius: 10px;
+}
+
+.products--rateds--content {
+    padding: 1em 4em;
+    background-color: var(--textMagenta);
+}
+
+.products--rateds--content h2 {
+    font-size: 0.9em;
+}
+
+.products--cards {
+    padding: 3em 2em;
+    background-color: var(--primary);
+}
+
+.products--cards--header {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.products--cards--header img {
+    width: 50px;
+    border-radius: 50%;
+}
+
+.products--cards--informations {
+    padding-left: 2em;
+}
+
+.products--cards--peoplename, .products--cards--text p {
+    color: var(--textWhite);
+}
+
+.products--cards--peoplename, .products--cards--buyer {
+    font-size: 1em;
+}
+
+.products--cards--peoplename {
+    font-weight: 500;
+}
+
+.products--cards--buyer {
+    font-weight: 400;
+}
+
+.products--cards--buyer {
+    color: var(--textPink);
+    padding-top: 0.2em;
+}
+
+.products--cards--text {
+    text-align: initial;
+    font-size: .85em;
+    line-height: 2em;
+    letter-spacing: 0.3px;
+    padding-top: 2em;
+}
+
+/* Anchors */
+
+/* Telefones em landscape e abaixo */
+@media (min-width: 535px) and (max-width: 715px) {
+    .products {
+        width: 80%;
+    }
+}
+
+/* Telefone em landscape a tablet em portrait */
+@media (min-width: 716px) and (max-width: 1075px) {
+    .products {
+        width: 70%;
+    }
+}
+
+/* tablet em portrait a landscape e desktop */
+@media (min-width: 1076px) and (max-width: 1350px) {
+    .products {
+        width: 55%;
+    }
+}
+
+/* Desktop grande */
+@media (min-width: 1351px) {
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: url(./images/bg-pattern-top-desktop.svg) no-repeat, url(./images/bg-pattern-bottom-desktop.svg) no-repeat bottom right;
+    }
+
+    .products {
+        width: 85%;
+    }
+
+    .products--header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 4em;
+    }
+
+    .products--footer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 2em;
+    }
+
+    .products--texts {
+        width: 40%;
+        text-align: initial;
+    }
+    
+    .products--texts h1 {
+        padding-left: 0;
+        padding-bottom: 0.3em;
+        font-size: 3.5em;
+    }
+
+    .products--texts h4 {
+        padding-left: 0;
+        font-size: 1.2em;
+        font-weight: 500;
+    }
+
+    .products--rateds {
+        width: 40%;
+    }
+
+    .products--rateds--content {
+        display: flex;
+    }
+
+    .products--rateds > .products--rateds--content:nth-child(1) {
+        transform: translateX(-20%);
+    }
+
+    .products--rateds > .products--rateds--content:nth-child(2) {
+        transform: translateX(-10%);
+    }
+    
+    .products--rateds--content h2 {
+        margin-left: 2em;
+    }
+
+    .products--footer > .products--cards:nth-child(1) {
+        transform: translateY(-20%);
+    }
+    .products--footer > .products--cards:nth-child(2) {
+        transform: translateY(-10%);
+    }
+}
+
+
+@media (min-width: 1550px) {
+    .products {
+        width: 75%;
+    }
+
+}
+
+/*Credits*/
+
+.attribution {
+    padding: 1em;
+}
+
+.attribution a{
+    text-decoration: none;
+    color: var(--primary);
+    font-weight: 700;
+}
+

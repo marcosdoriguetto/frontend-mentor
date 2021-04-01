@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Screenshot
 
-![Desktop](./images/my-version-desktop.png)
-![Mobile](./images/my-version-mobile.png)
+![Desktop](./design/my-version-desktop.png)
+![Mobile](./design/my-version-mobile.png)
 
 ## My process
 
