@@ -63,7 +63,7 @@ body {
     min-height: 30%;
 }
 
-.cars--buttom {
+.cars--button {
     padding: 0.8em 2em;
     border: 2px solid var(--lightGray);
     border-radius: 2em;
@@ -73,29 +73,29 @@ body {
     cursor: pointer;
 }
 
-.cars--sedans > .cars--body > .cars--buttom {
+.cars--sedans > .cars--body > .cars--button {
     color: var(--primary);
 }
 
-.cars--suvs > .cars--body > .cars--buttom {
+.cars--suvs > .cars--body > .cars--button {
     color: var(--secondary);
 }
 
-.cars--luxury > .cars--body > .cars--buttom {
+.cars--luxury > .cars--body > .cars--button {
     color: var(--thirdly);
 }
 
-.cars--sedans > .cars--body > .cars--buttom:hover {
+.cars--sedans > .cars--body > .cars--button:hover {
     background-color: var(--primary);
     color: var(--lightGray);
 }
 
-.cars--suvs > .cars--body > .cars--buttom:hover {
+.cars--suvs > .cars--body > .cars--button:hover {
     background-color: var(--secondary);
     color: var(--lightGray);
 }
 
-.cars--luxury > .cars--body > .cars--buttom:hover {
+.cars--luxury > .cars--body > .cars--button:hover {
     background-color: var(--thirdly);
     color: var(--lightGray);
 }
@@ -122,7 +122,7 @@ body {
         align-items: center;
     }
 
-    .cars--buttom {
+    .cars--button {
         margin-top: 6em;
     }
 
