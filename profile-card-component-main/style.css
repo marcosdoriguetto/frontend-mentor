@@ -93,20 +93,15 @@ h1, h2, h3 {
 /* Anchors */
 
 /* Telefones em landscape e abaixo */
-@media (max-width: 480px) {
+@media (min-width: 520px) {
     .contents {
-        width: 90%;
+        width: 500px;
     }
 }
-
 /* Telefone em landscape a tablet em portrait */
 @media (min-width: 520px) and (max-width: 665px) {
     body {
         background-position: left -37em top -32em, right -40em bottom -27em;
-    }
-
-    .contents {
-        width: 70%;
     }
 }
 
@@ -114,19 +109,11 @@ h1, h2, h3 {
     body {
         background-position: left -34em top -29em, right -37em bottom -24em;
     }
-
-    .contents {
-        width: 55%;
-    }
 }
 
 @media (min-width: 921px) and (max-width: 1089px) {
     body {
         background-position: left -34em top -29em, right -37em bottom -24em;
-    }
-
-    .contents {
-        width: 45%;
     }
 }
 
@@ -135,11 +122,6 @@ h1, h2, h3 {
     body {
         background-position: left -31em top -26em, right -34em bottom -21em;
     }
-
-
-    .contents {
-        width: 40%;
-    }
 }
 
 /* Desktop grande */
@@ -147,19 +129,10 @@ h1, h2, h3 {
     body {
         background-position: left -31em top -26em, right -34em bottom -21em;
     }
-
-    .contents {
-        width: 40%;
-    }
 }
-
 
 @media (min-width: 1440px) {
     body {
         background-position: left -28em top -23em, right -31em bottom -18em;
-    }
-
-    .contents {
-        width: 30%;
     }
 }
