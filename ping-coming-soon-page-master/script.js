@@ -33,5 +33,3 @@ button.onclick = () => {
         classResponse(getP);
     }
 }
-
-
